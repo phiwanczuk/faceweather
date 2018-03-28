@@ -32,8 +32,8 @@ class Weather extends React.Component {
     render() {
 
 
-
-        // const src = `//openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        //
+        // const src = `//openweathermap.org/img/w/${weather[0].icon}.png`;
 
         const {weather} = this.state
         return (
@@ -53,11 +53,12 @@ class Weather extends React.Component {
                 weather &&
                 <React.Fragment>
                     <p>City: {weather.name}</p>
-                    <p>City: {weather.weather[0].icon + '.png'}</p>
-                    <p>Temperature: {weather.main.temp}</p>
-                    <p>Humidity: {weather.main.humidity}</p>
-                    {/*<p><img src='http://openweathermap.org/img/w/" + weather[0].icon + ".png' alt='Icon depicting current weather.'/>*/}
-                    {/*</p>*/}
+                    <p>Temperature: {weather.main.temp + ' C'}</p>
+                    <p>Humidity: {weather.main.humidity + '%'}</p>
+                    <p>Pressure: {weather.main.pressure + 'Ha'}</p>
+
+                    <img src={'https://www.openweathermap.org/img/w/' + weather.weather[0].icon + '.png' }
+                         alt='weather icon'/>
 
                 </React.Fragment>
 
@@ -65,6 +66,8 @@ class Weather extends React.Component {
             </div>
         )
     }
+
 }
+
 
 export default Weather
