@@ -55,7 +55,8 @@ class Weather extends React.Component {
                     <p>City: {weather.name}</p>
                     <p>Temperature: {weather.main.temp + ' C'}</p>
                     <p>Humidity: {weather.main.humidity + '%'}</p>
-                    <p>Pressure: {weather.main.pressure + 'Ha'}</p>
+                    <p>Pressure: {weather.main.pressure + ' hPa'}</p>
+                    <p>Pressure: {weather.wind.speed + ' m/s'}</p>
 
                     <img src={'https://www.openweathermap.org/img/w/' + weather.weather[0].icon + '.png' }
                          alt='weather icon'/>
