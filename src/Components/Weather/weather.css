@@ -1,0 +1,30 @@
+body{
+    background: url("cold-front-warm-front-hurricane-felix-76969.jpeg") no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.weather-form{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.weather-form > input{
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+    border: solid yellow;
+    font-size: 2em;
+}
+
+.weather-form > button{
+    position: absolute;
+    top: 120%;
+    left: 45%;
+    height: 35px;
+    width: 70px;
+
+}

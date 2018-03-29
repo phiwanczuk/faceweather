@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './weather.css'
 
 class Weather extends React.Component {
 
@@ -39,9 +39,11 @@ class Weather extends React.Component {
         return (
             <div className='weather-view'>
                 <h1>Check the weather forecast for your city</h1>
-                <form onSubmit={this.fetchData}>
+                <form
+                    className='weather-form'
+                    onSubmit={this.fetchData}>
                     <input type="text"
-                           placeholder='City name'
+                           placeholder=' City name...'
                            value={this.state.location}
                            onChange={this.handleInputChange}
                     />
