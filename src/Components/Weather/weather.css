@@ -3,8 +3,19 @@ body{
     background-size: cover;
 
 }
+.weather-view{
+
+}
 
 
+.weather-view h1{
+    position: absolute;
+    color: white;
+    font-family: "DejaVu Sans";
+    left: 25%;
+    top: 5%;
+
+}
 
 .weather-form{
     position: absolute;
@@ -27,4 +38,15 @@ body{
     height: 35px;
     width: 70px;
 
+}
+
+.weather-single-view{
+    border: 5px solid yellow;
+    padding: 10px;
+    color: #fff;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    background: rgba(0,0,0,0.6);
 }

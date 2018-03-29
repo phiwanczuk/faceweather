@@ -38,14 +38,14 @@ class Weather extends React.Component {
         const {weather} = this.state
         return (
             <div className='weather-view'>
-                <h1>Check the weather forecast for your city</h1>
+                <h1>Check the weather forecast for your city!</h1>
                 <form
                     className='weather-form'
                     onSubmit={this.fetchData}>
-                    <input type="text"
+                    <input type="   text"
                            placeholder=' City name...'
-                           value={this.state.location}
-                           onChange={this.handleInputChange}
+                           value={   this.state.location}
+                           onChange={   this.handleInputChange}
                     />
                     <button
                         type='submit'
@@ -54,6 +54,7 @@ class Weather extends React.Component {
                 </form>   {
                 weather &&
                 <React.Fragment>
+                    <div className='weather-single-view'>
                     <p>City: {weather.name}</p>
                     <p>Temperature: {weather.main.temp + ' C'}</p>
                     <p>Humidity: {weather.main.humidity + '%'}</p>
@@ -62,7 +63,7 @@ class Weather extends React.Component {
 
                     <img src={'https://www.openweathermap.org/img/w/' + weather.weather[0].icon + '.png' }
                          alt='weather icon'/>
-
+                    </div>
                 </React.Fragment>
 
                 }
