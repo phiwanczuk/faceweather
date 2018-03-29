@@ -1,6 +1,7 @@
 body{
     background: url("cold-front-warm-front-hurricane-felix-76969.jpeg") no-repeat;
     background-size: cover;
+    font-family: "DejaVu Sans"
 
 }
 .weather-view{
@@ -21,14 +22,18 @@ body{
     position: absolute;
     top: 30%;
     left: 30%;
+    border-radius: 40px;
 }
 
 .weather-form > input{
     width: 600px;
     height: 50px;
     border-radius: 40px;
-    border: solid yellow;
+    border: solid transparent;
     font-size: 2em;
+}
+.weather-form > input:focus{
+    border: solid yellow;
 }
 
 .weather-form > button{
@@ -49,4 +54,17 @@ body{
     top: 50%;
     left: 33%;
     background: rgba(0,0,0,0.6);
+    border-radius: 30px;
+
+}
+
+.weather-single-view-city{
+    margin-left: 35%;
+}
+
+.weather-single-view-img{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 13%;
 }

@@ -55,14 +55,16 @@ class Weather extends React.Component {
                 weather &&
                 <React.Fragment>
                     <div className='weather-single-view'>
-                    <p>City: {weather.name}</p>
-                    <p>Temperature: {weather.main.temp + ' C'}</p>
-                    <p>Humidity: {weather.main.humidity + '%'}</p>
-                    <p>Pressure: {weather.main.pressure + ' hPa'}</p>
-                    <p>Pressure: {weather.wind.speed + ' m/s'}</p>
+                    <p className='weather-single-view-city'>City: {weather.name}</p>
+                    <p className='weather-single-view-temp'>Temperature: {weather.main.temp + ' C'}</p>
+                    <p className='weather-single-view-hum'>Humidity: {weather.main.humidity + '%'}</p>
+                    <p className='weather-single-view-press'>Pressure: {weather.main.pressure + ' hPa'}</p>
+                    <p className='weather-single-view-wind'>Wind speed: {weather.wind.speed + ' m/s'}</p>
 
                     <img src={'https://www.openweathermap.org/img/w/' + weather.weather[0].icon + '.png' }
-                         alt='weather icon'/>
+                         alt='weather icon'
+                         className='weather-single-view-img'
+                    />
                     </div>
                 </React.Fragment>
 
