@@ -43,6 +43,7 @@ class Weather extends React.Component {
                     className='weather-form'
                     onSubmit={this.fetchData}>
                     <input type="   text"
+                           className='input-weather'
                            placeholder=' City name...'
                            value={   this.state.location}
                            onChange={   this.handleInputChange}

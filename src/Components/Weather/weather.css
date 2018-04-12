@@ -68,3 +68,18 @@ body{
     top: 40%;
     width: 13%;
 }
+
+.input-weather{
+    border: none;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    text-align: center;
+}
+
+.input-weather:focus{
+    outline: none;
+}
+
+.input-weather:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
